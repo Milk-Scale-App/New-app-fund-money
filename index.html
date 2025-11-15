@@ -13,7 +13,7 @@
         <div class="container">
             <div class="loader"></div>
             <h2>Fund Money</h2>
-            <p>लोड हो रहा है...</p>
+            <p id="loading-text">लोड हो रहा है...</p>
         </div>
     </div>
 
@@ -68,6 +68,10 @@
             <input type="password" id="setup-password" placeholder="नया पासवर्ड (6 अक्षर)">
             <input type="password" id="setup-confirm-password" placeholder="पासवर्ड कन्फर्म करें">
             <button onclick="setupPassword()">पासवर्ड सेव करें</button>
+            
+            <div class="back-btn" onclick="logout()">
+                वापस लॉगिन पर
+            </div>
         </div>
     </div>
 
@@ -411,4 +415,4 @@
     <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
     <script src="app.js"></script>
 </body>
-                    </html>
+                        </html>
